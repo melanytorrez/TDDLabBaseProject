@@ -1,9 +1,12 @@
-//import multiplicar from"./multiplicador.js"
+import fizzbuzz from"./fizzbuzz.js"
 
 describe("fizzbuzz", () =>{
-    it("deberia generar el mismo numero si no sigue una regla dos numeros",()=>{
+    it("deberia generar 1 ya que el numero no sigue una regla",()=>{
       expect(fizzbuzz(1)).toEqual('1');
     });
+    it("deberia generar el mismo numero si no sigue una regla",()=>{
+        expect(fizzbuzz(2)).toEqual('2');
+      });
 /*
     it("deberia generar Fizz si el numero es divisible por 3",()=>{
         expect(fizzbuzz(3)).toEqual('Fizz');
@@ -19,6 +22,3 @@ describe("fizzbuzz", () =>{
       */
   });
 
-function fizzbuzz(){
-    return '1';
-}
